@@ -36,7 +36,6 @@ without loss of quality.
 %package -n %{libname}
 Summary: A QtQuick module providing high-performance charts.
 Group: System/Libraries
-Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
 The Quick Charts module provides a set of charts that can be used from
