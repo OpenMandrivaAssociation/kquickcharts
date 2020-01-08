@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Quick)
 BuildRequires: pkgconfig(Qt5Qml)
 BuildRequires: pkgconfig(Qt5Test)
+BuildRequires: pkgconfig(Qt5QuickControls2)
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5)
 Requires: %{libname} = %{EVRD}
