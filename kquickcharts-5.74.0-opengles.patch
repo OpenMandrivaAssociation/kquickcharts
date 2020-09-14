@@ -1,0 +1,18 @@
+diff -up kquickcharts-5.74.0/src/scenegraph/SDFShader.cpp.omv~ kquickcharts-5.74.0/src/scenegraph/SDFShader.cpp
+--- kquickcharts-5.74.0/src/scenegraph/SDFShader.cpp.omv~	2020-09-14 04:22:27.368556754 +0200
++++ kquickcharts-5.74.0/src/scenegraph/SDFShader.cpp	2020-09-14 04:22:37.233704577 +0200
+@@ -25,11 +25,11 @@ void SDFShader::setShaders(const QString
+     auto header = QStringLiteral("header_desktop.glsl");
+     auto format = QOpenGLContext::currentContext()->format();
+     if (format.renderableType() == QSurfaceFormat::OpenGLES) {
+-        if (format.majorVersion() >= 3) {
++/*        if (format.majorVersion() >= 3) {
+             header = QStringLiteral("header_es3.glsl");
+-        } else {
++        } else { */
+             header = QStringLiteral("header_es2.glsl");
+-        }
++//        }
+     }
+ 
+     setShaderSourceFiles(QOpenGLShader::Vertex, {QString::fromLatin1(shaderRoot) + header, QString::fromLatin1(shaderRoot) + vertex});
