@@ -4,7 +4,7 @@
 
 Name: kquickcharts
 Version:	5.74.0
-Release:	3
+Release:	4
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Patch0: kquickcharts-5.74.0-opengles.patch
 Summary: A QtQuick module providing high-performance charts.
