@@ -3,10 +3,9 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kquickcharts
-Version:	5.74.0
-Release:	4
+Version:	5.75.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
-Patch0: kquickcharts-5.74.0-opengles.patch
 Summary: A QtQuick module providing high-performance charts.
 URL: http://kde.org/
 License: GPL
