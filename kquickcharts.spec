@@ -3,7 +3,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kquickcharts
-Version:	5.77.0
+Version:	5.78.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: A QtQuick module providing high-performance charts.
@@ -60,6 +60,7 @@ without loss of quality.
 
 %files
 %{_libdir}/qt5/qml/org/kde/quickcharts
+%{_datadir}/qlogging-categories5/kquickcharts.categories
 
 %files -n %{devname}
 %{_libdir}/cmake/KF5*
