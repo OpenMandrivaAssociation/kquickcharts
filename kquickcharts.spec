@@ -1,10 +1,9 @@
 %define devname %mklibname KF5QuickCharts -d
-%define debug_package %{nil}
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kquickcharts
-Version:	5.81.0
-Release:	2
+Version:	5.82.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: A QtQuick module providing high-performance charts.
 URL: http://kde.org/
