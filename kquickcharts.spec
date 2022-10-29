@@ -3,7 +3,7 @@
 
 Name: kquickcharts
 Version:	5.99.0
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: A QtQuick module providing high-performance charts.
 URL: http://kde.org/
